@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --navy: #0a0f1e;
-  --navy-mid: #111827;
-  --accent: #f59e0b;
-  --accent-glow: rgba(245,158,11,0.15);
-  --muted: #6b7280;
-  --border: rgba(255,255,255,0.07);
-}
+@layer base {
+  :root {
+    --accent-glow: rgba(245, 158, 11, 0.15);
+    --border-subtle: rgba(255, 255, 255, 0.07);
+  }
 
-* { box-sizing: border-box; }
+  html {
+    font-family: 'DM Sans', sans-serif;
+  }
 
-body {
-  background: var(--navy);
-  color: #f3f4f6;
-  min-height: 100vh;
-  font-family: 'DM Sans', sans-serif;
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
 }
