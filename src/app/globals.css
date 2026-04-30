@@ -1,23 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --accent-glow: rgba(245, 158, 11, 0.15);
-    --border-subtle: rgba(255, 255, 255, 0.07);
-  }
-
-  html {
-    font-family: 'DM Sans', sans-serif;
-  }
-
-  input[type='number']::-webkit-inner-spin-button,
-  input[type='number']::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-  }
-
-  input[type='number'] {
-    -moz-appearance: textfield;
-  }
+@theme {
+  --font-syne: var(--font-syne);
+  --font-dm: var(--font-dm);
+  --color-navy: #0a0f1e;
+  --color-navy-mid: #111827;
+  --color-accent: #f59e0b;
 }
